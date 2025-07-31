@@ -12,7 +12,7 @@ interface MenuCardProps {
 
 const MenuCard = ({ title, items, image }: MenuCardProps) => {
   return (
-    <div className="bg-card rounded-xl overflow-hidden shadow-[var(--shadow-elegant)] transition-transform hover:scale-[1.02] duration-300">
+    <div className="bg-primary rounded-xl overflow-hidden shadow-[var(--shadow-elegant)] transition-transform hover:scale-[1.02] duration-300">
       <div className="relative h-48 overflow-hidden">
         <img
           src={image}
@@ -30,11 +30,11 @@ const MenuCard = ({ title, items, image }: MenuCardProps) => {
           {items.map((item, index) => (
             <div key={index} className="flex justify-between items-start group">
               <div className="flex-1">
-                <h4 className="font-medium text-foreground group-hover:text-accent transition-colors">
+                <h4 className="font-medium text-white text-accent transition-colors">
                   {item.name}
                 </h4>
                 {item.description && (
-                  <p className="text-sm text-muted-foreground mt-1">
+                  <p className="text-sm text-primary-foreground/80 mt-1">
                     {item.description}
                   </p>
                 )}

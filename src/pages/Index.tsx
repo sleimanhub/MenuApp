@@ -22,21 +22,21 @@ const Index = () => {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="text-center p-8 bg-card rounded-xl shadow-[var(--shadow-elegant)]">
+            <div className="text-center p-8 bg-primary rounded-xl shadow-[var(--shadow-elegant)]">
               <div className="bg-accent/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Star className="h-8 w-8 text-accent" />
               </div>
-              <h3 className="text-xl font-semibold mb-4">Premium Quality</h3>
-              <p className="text-muted-foreground">
+              <h3 className="text-xl text-white font-semibold mb-4">Premium Quality</h3>
+              <p className="text-muted-foreground/100">
                 We use only the finest ingredients and traditional Lebanese spices to create authentic flavors.
               </p>
             </div>
             
-            <div className="text-center p-8 bg-card rounded-xl shadow-[var(--shadow-elegant)]">
+            <div className="text-center p-8 bg-primary rounded-xl shadow-[var(--shadow-elegant)]">
               <div className="bg-accent/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Clock className="h-8 w-8 text-accent" />
               </div>
-              <h3 className="text-xl font-semibold mb-4">Fast Service</h3>
+              <h3 className="text-xl text-white font-semibold mb-4">Fast Service</h3>
               <p className="text-muted-foreground">
                 Quick preparation without compromising on quality. Fresh food served hot and ready.
               </p>

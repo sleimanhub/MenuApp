@@ -14,26 +14,26 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4">
               <a 
-                href="#" 
+                href="https://www.facebook.com/people/Dabbous-W-Jeneh/61576134406635/" 
                 className="text-primary-foreground/60 hover:text-accent transition-colors"
                 aria-label="Facebook"
               >
                 <Facebook className="h-5 w-5" />
               </a>
               <a 
-                href="#" 
+                href="https://www.instagram.com/dabouswjeneh/" 
                 className="text-primary-foreground/60 hover:text-accent transition-colors"
                 aria-label="Instagram"
               >
                 <Instagram className="h-5 w-5" />
               </a>
-              <a 
+              {/* <a 
                 href="#" 
                 className="text-primary-foreground/60 hover:text-accent transition-colors"
                 aria-label="Twitter"
               >
                 <Twitter className="h-5 w-5" />
-              </a>
+              </a> */}
             </div>
           </div>
 
@@ -75,13 +75,13 @@ const Footer = () => {
               <div className="flex items-center space-x-3">
                 <MapPin className="h-5 w-5 text-accent" />
                 <span className="text-primary-foreground/80">
-                  123 Main Street, Beirut, Lebanon
+                  طريق عام دير قانون رأس العين صور
                 </span>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-accent" />
                 <span className="text-primary-foreground/80">
-                  +961 123 456 789
+                  +961 76 334 479
                 </span>
               </div>
               <div className="flex items-center space-x-3">

@@ -9,8 +9,8 @@ const Menu = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="bg-[var(--gradient-warm)] text-accent py-20">
-        <div className="container mx-auto px-4 text-center">
+      <section className="bg-primary text-accent py-20">
+        <div className="container  mx-auto px-4 text-center">
           <h1 className="text-5xl md:text-6xl font-bold mb-6">Our Menu</h1>
           <p className="text-xl text-accent/90 max-w-2xl mx-auto">
             Discover our delicious selection of authentic Middle Eastern dishes, 
@@ -20,9 +20,9 @@ const Menu = () => {
       </section>
 
       {/* Menu Grid */}
-      <section className="py-16">
+      <section className="py-8 bg-accent">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ">
             {menuData.map((category, index) => (
               <MenuCard
                 key={index}
@@ -36,10 +36,10 @@ const Menu = () => {
       </section>
 
       {/* Call to Action */}
-      <section className="bg-muted py-16">
+      <section className="bg-primary py-16">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-4">Ready to Order?</h2>
-          <p className="text-muted-foreground  mb-8 max-w-2xl mx-auto">
+          <h2 className="text-3xl text-white font-bold mb-4">Ready to Order?</h2>
+          <p className="text-primary-foreground/80  mb-8 max-w-2xl mx-auto">
             Contact us now to place your order or visit our restaurant for a memorable dining experience.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
