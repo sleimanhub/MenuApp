@@ -35,9 +35,7 @@ const Contact = () => {
                   <div>
                     <h3 className="font-semibold mb-1 text-accent">Location</h3>
                     <p className="text-white/80">
-                      123 Main Street<br />
-                      Beirut, Lebanon<br />
-                      Postal Code: 1234
+                      طريق عام دير قانون رأس العين صور
                     </p>
                   </div>
                 </div>
@@ -49,8 +47,7 @@ const Contact = () => {
                   <div>
                     <h3 className="font-semibold mb-1 text-accent">Phone</h3>
                     <p className="text-white/80">
-                      +961 76 334 479<br />
-                      +961 81 400 846
+                      +961 76 334 479
                     </p>
                   </div>
                 </div>
@@ -62,8 +59,7 @@ const Contact = () => {
                   <div>
                     <h3 className="font-semibold mb-1 text-accent">Email</h3>
                     <p className="text-white/80">
-                      info@dabouswjeneh.com<br />
-                      orders@dabouswjeneh.com
+                      info@dabouswjeneh.com
                     </p>
                   </div>
                 </div>
