@@ -11,7 +11,7 @@ const Contact = () => {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="bg-[var(--gradient-warm)] text-accent py-20">
+      <section className="bg-[var(--gradient-warm)] text-accent py-20 border-b border-accent/50">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-5xl md:text-6xl font-bold mb-6">Contact Us</h1>
           <p className="text-xl text-accent/90 max-w-2xl mx-auto">
