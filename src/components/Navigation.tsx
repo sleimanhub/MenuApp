@@ -47,15 +47,15 @@ const Navigation = () => {
           </div>
 
           {/* Contact Info */}
-          <div className="hidden lg:flex items-center space-x-4 text-sm text-muted-foreground">
+          <div className="hidden lg:flex items-center space-x-4 text-sm text-white/70">
             <div className="flex items-center space-x-1">
               <Phone className="h-4 w-4" />
               <span>+961 76 334 479</span>
             </div>
-            <div className="flex items-center space-x-1">
+            {/* <div className="flex items-center space-x-1">
               <MapPin className="h-4 w-4" />
               <span>طريق عام دير قانون رأس العين صور</span>
-            </div>
+            </div> */}
           </div>
 
           {/* Mobile menu button */}

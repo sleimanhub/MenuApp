@@ -7,9 +7,9 @@ import { Textarea } from "@/components/ui/textarea";
 
 const Contact = () => {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-primary">
       <Navigation />
-      
+
       {/* Hero Section */}
       <section className="bg-[var(--gradient-warm)] text-accent py-20">
         <div className="container mx-auto px-4 text-center">
@@ -26,55 +26,55 @@ const Contact = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Contact Details */}
             <div>
-              <h2 className="text-3xl font-bold mb-8">Get In Touch</h2>
+              <h2 className="text-3xl text-accent font-bold mb-8">Get In Touch</h2>
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
                   <div className="bg-accent/10 p-3 rounded-lg">
                     <MapPin className="h-6 w-6 text-accent" />
                   </div>
                   <div>
-                    <h3 className="font-semibold mb-1">Location</h3>
-                    <p className="text-muted-foreground">
+                    <h3 className="font-semibold mb-1 text-accent">Location</h3>
+                    <p className="text-white/80">
                       123 Main Street<br />
                       Beirut, Lebanon<br />
                       Postal Code: 1234
                     </p>
                   </div>
                 </div>
-                
+
                 <div className="flex items-start space-x-4">
                   <div className="bg-accent/10 p-3 rounded-lg">
                     <Phone className="h-6 w-6 text-accent" />
                   </div>
                   <div>
-                    <h3 className="font-semibold mb-1">Phone</h3>
-                    <p className="text-muted-foreground">
-                      +961 123 456 789<br />
-                      +961 987 654 321
+                    <h3 className="font-semibold mb-1 text-accent">Phone</h3>
+                    <p className="text-white/80">
+                      +961 76 334 479<br />
+                      +961 81 400 846
                     </p>
                   </div>
                 </div>
-                
+
                 <div className="flex items-start space-x-4">
                   <div className="bg-accent/10 p-3 rounded-lg">
                     <Mail className="h-6 w-6 text-accent" />
                   </div>
                   <div>
-                    <h3 className="font-semibold mb-1">Email</h3>
-                    <p className="text-muted-foreground">
+                    <h3 className="font-semibold mb-1 text-accent">Email</h3>
+                    <p className="text-white/80">
                       info@dabouswjeneh.com<br />
                       orders@dabouswjeneh.com
                     </p>
                   </div>
                 </div>
-                
+
                 <div className="flex items-start space-x-4">
                   <div className="bg-accent/10 p-3 rounded-lg">
                     <Clock className="h-6 w-6 text-accent" />
                   </div>
                   <div>
-                    <h3 className="font-semibold mb-1">Opening Hours</h3>
-                    <div className="text-muted-foreground space-y-1">
+                    <h3 className="font-semibold mb-1 text-accent">Opening Hours</h3>
+                    <div className="text-white/80 space-y-1">
                       <p>Monday - Sunday</p>
                       <p>11:00 AM - 11:00 PM</p>
                       <p className="text-sm text-accent">No reservations needed</p>
@@ -85,46 +85,58 @@ const Contact = () => {
             </div>
 
             {/* Contact Form */}
-            <div className="bg-card p-8 rounded-xl shadow-[var(--shadow-elegant)]">
-              <h2 className="text-3xl font-bold mb-6">Send Us a Message</h2>
+            <div className="bg-accent text-white p-8 rounded-xl shadow-[var(--shadow-elegant)]">
+              <h2 className="text-3xl  font-bold mb-6">Send Us a Message</h2>
               <form className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div>
                     <label className="block text-sm font-medium mb-2">First Name</label>
-                    <Input placeholder="Your first name" />
+                    <Input
+                      placeholder="Your first name"
+                      className="flex h-10 w-full rounded-md bg-accent  border-2 text-background px-3 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-white/80 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-0 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm"
+                    />
                   </div>
                   <div>
                     <label className="block text-sm font-medium mb-2">Last Name</label>
-                    <Input placeholder="Your last name" />
+                    <Input placeholder="Your last name"
+                      className="flex h-10 w-full rounded-md bg-accent  border-2 text-background px-3 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-white/80 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-0 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm"
+                    />
                   </div>
                 </div>
-                
+
                 <div>
                   <label className="block text-sm font-medium mb-2">Email</label>
-                  <Input type="email" placeholder="your.email@example.com" />
-                </div>
-                
-                <div>
-                  <label className="block text-sm font-medium mb-2">Phone</label>
-                  <Input type="tel" placeholder="+961 123 456 789" />
-                </div>
-                
-                <div>
-                  <label className="block text-sm font-medium mb-2">Subject</label>
-                  <Input placeholder="What is this regarding?" />
-                </div>
-                
-                <div>
-                  <label className="block text-sm font-medium mb-2">Message</label>
-                  <Textarea 
-                    placeholder="Tell us more about your inquiry..." 
-                    className="min-h-[120px]"
+                  <Input type="email" placeholder="your.email@example.com"
+                    className="flex h-10 w-full rounded-md bg-accent  border-2 text-background px-3 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-white/80 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-0 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm"
+
                   />
                 </div>
-                
-                <Button 
-                  type="submit" 
-                  className="w-full bg-accent hover:bg-accent/90 text-accent-foreground font-semibold py-3"
+
+                <div>
+                  <label className="block text-sm font-medium mb-2">Phone</label>
+                  <Input type="tel" placeholder="+961 123 456 789"
+                    className="flex h-10 w-full rounded-md bg-accent  border-2 text-background px-3 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-white/80 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-0 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm"
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-sm font-medium mb-2">Subject</label>
+                  <Input placeholder="What is this regarding?"
+                    className="flex h-10 w-full rounded-md bg-accent  border-2 text-background px-3 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-white/80 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-0 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm"
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-sm font-medium mb-2">Message</label>
+                  <Textarea
+                    placeholder="Tell us more about your inquiry..."
+                    className="min-h-[120px] flex h-10 w-full rounded-md bg-accent  border-2 text-background px-3 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-white/80 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-0 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm"
+                  />
+                </div>
+
+                <Button
+                  type="submit"
+                  className="border border-2 w-full bg-accent hover:bg-white/90 hover:text-accent text-accent-foreground font-semibold py-3"
                 >
                   Send Message
                 </Button>
@@ -135,7 +147,7 @@ const Contact = () => {
       </section>
 
       {/* Map Section */}
-      <section className="py-16 bg-muted">
+      {/* <section className="py-16 bg-muted">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-8">Find Us</h2>
           <div className="bg-card rounded-xl overflow-hidden shadow-[var(--shadow-elegant)] h-96">
@@ -151,7 +163,7 @@ const Contact = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <Footer />
     </div>

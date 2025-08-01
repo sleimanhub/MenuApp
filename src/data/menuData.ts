@@ -1,7 +1,7 @@
 import appetizersImg from "@/assets/appetizers.jpg";
-import grilledImg from "@/assets/grilled.jpg";
+import grilledImg from "@/assets/Grilled1.jpg";
 import sandwichesImg from "@/assets/sandwiches.jpg";
-import broastedImg from "@/assets/broasted.jpg";
+import broastedImg from "@/assets/broastedChick.jpg";
 import crispyImg from "@/assets/crispy.jpg";
 import beveragesImg from "@/assets/beverages.jpg";
 
@@ -60,7 +60,7 @@ export const menuData: MenuCategory[] = [
     ],
   },
   {
-    title: "Crispy Chicken",
+    title: "Crunchy Fried Chicken",
     image: crispyImg,
     items: [
       { name: "Crispy Chicken Meal (12 pcs)", price: 19, description: "Twelve pieces of extra crispy chicken" },
